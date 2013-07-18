@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Zombie tested page</title>
+	</head>
+	<body>
+		<h1>Welcome</h1>
+		<p class="replace-me">This text is replaced by js</p>
+		<button id="push">Push me!</button>
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript">
+			$("p.replace-me").text("This text was replaced by js");
+			$("#push").click(function(e){
+				$("p.replace-me").text("You pushed the button!");
+			});
+		</script>
+	</body>
+</html>
